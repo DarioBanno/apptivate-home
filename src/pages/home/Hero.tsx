@@ -7,7 +7,18 @@ const Hero = () => {
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false)
   const [text, setText] = useState('')
-  const typingWords = ['restaurant', 'cafe', 'bar']
+  const typingWords = [
+    'restaurant',
+    'grocery store',
+    'pharmacy',
+    'flower shop',
+    'electronic store',
+    'hair salon',
+    'home services',
+    'laundry shop',
+    'catering',
+    'local market'
+  ]
 
   function handleGetStartedPressed() {
     window.location.href = "https://www.apptizer.app"
@@ -47,7 +58,7 @@ const Hero = () => {
         {/* <div className="mt-12 lg:order-1 lg:col-span-8 text-center"> */}
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-wide leading-tight">
-            Branded app
+            Branded apps
             <br />
             for your
             <br />
@@ -58,7 +69,7 @@ const Hero = () => {
           </h1>
 
           <p className="mt-10 text-lg text-neutral-500 max-w-4xl">
-            Your own mobile and web ordering app for delivery, loyalty, bookings and much more.
+            Your own mobile and web ordering apps for delivery, loyalty, bookings and much more.
           </p>
 
           <div className="py-12">

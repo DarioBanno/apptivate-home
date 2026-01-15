@@ -1,7 +1,5 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
-// @ts-ignore
-import logo from "/src/assets/apptizer-orangey.png"
 import { navItems } from "./Constants"
 
 export default function Navbar() {
@@ -12,13 +10,13 @@ export default function Navbar() {
   }
 
   return (
-    // TODO: remove bg-white and use backdrop-blur-lg on nav after logo is fixed with transparent bg
     <>
-      <nav className="sticky top-0 z-50 py-4 bg-white">
+      <nav className="sticky top-0 z-50 py-4 backdrop-blur-lg">
         <div className="container px-4 mx-auto relative lg:text-sm flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
             <a href="#">
-              <img className="h-10 w-auto" src={logo} alt="Logo" />
+              <p className="text-bold text-3xl text-primary">Apptivate</p>
+              {/* <img className="h-10 w-auto" src={logo} alt="Logo" /> */}
             </a>
           </div>
 

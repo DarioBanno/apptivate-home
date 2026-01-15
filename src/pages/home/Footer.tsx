@@ -29,7 +29,7 @@ const Footer = () => {
       >
         {/* Logo + Tagline */}
         <div>
-          <h2 className="text-xl font-bold">Apptizer</h2>
+          <h2 className="text-xl font-bold">Apptivate</h2>
           <p className="mt-2 text-sm text-white">Your restaurant. Your brand. Your app.</p>
         </div>
 
